@@ -1,0 +1,26 @@
+/* Sara White - CSD-430 - Assignment 2.2 */
+
+body {
+  margin: 18px;
+  font-family: "Roboto", system-ui, sans-serif;
+  background: #5b4f54;
+  color: rgb(209, 209, 209);
+}
+
+table th, td, caption {
+  border-collapse: collapse;
+  border-style: inset;
+  border-width: 6px;
+  border-color: rgb(64, 63, 63);
+  font-size: 20px;
+}
+
+caption {
+    font-style: italic;
+    font-size: 24px;
+}
+
+
+th, td, caption {
+  padding: 10px;
+}
