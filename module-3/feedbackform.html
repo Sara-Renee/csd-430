@@ -1,0 +1,148 @@
+<!-- Sara White - CSD-430 - Assignment 3.2 HTML-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lawn Experts Lawn Service Feedback Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="survey-card">
+   
+            <h1>The Lawn Experts</h1>
+            <h2> Feedback survey for your recent services</h2>
+            <p>We'd love to hear from you! Thank you for taking the time to provide feedback on your recent services from <b>The Lawn Experts</b>.</p>
+
+            <!-- form attributes - using post method, input type submit
+             to send form data to jsp page-->
+            <form action="displayResults.jsp" method="post">
+
+
+
+                <p>    <!-- customer contact information inputs -->
+
+                    <label for="firstName">First Name:</label><br>
+                        <input 
+                            type="text" 
+                            id="firstName" 
+                            name="firstName" 
+                            required/>
+                </p>
+
+                <p>
+
+                    <label for="lastName">Last Name:</label><br>
+                        <input 
+                            type="text" 
+                            id="lastName" 
+                            name="lastName" 
+                            required/>
+                </p>
+
+                <p>
+                    <label for="email">Email address:</label><br>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required/>
+                </p>
+
+                <p>
+                    <!-- formatting for phone #-->
+                    <label for="phone">Please enter your phone number:</label><br>
+                        <small>Enter your 10-digit phone number in this format: XXX-XXX-XXXX</small><br>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required>
+                </p>
+
+                <p>
+                    Which lawn service did you receive (check all that apply)?
+                </p>
+                <!-- checkboxes to select all services that apply -->
+                    <label>
+                        <input 
+                        type="checkbox" 
+                        name="services" 
+                        value="Lawn mowing"> 
+                        Lawn mowing
+                    </label><br>
+                    <label>
+                        <input 
+                        type="checkbox" 
+                        name="services" 
+                        value="Landscaping"> 
+                        Landscaping</label><br>
+                    <label><input 
+                        type="checkbox" 
+                        name="services" 
+                        value="Yard Cleanup"> 
+                        Yard Cleanup</label><br>
+                    <label><input 
+                        type="checkbox" 
+                        name="services" 
+                        value="Stump Removal"> 
+                        Stump Removal</label><br>
+                    <label><input 
+                        type="checkbox" 
+                        name="services" 
+                        value="Full Service (mowing, landscaping, yard cleanup)"> 
+                        Full Service (mowing, landscaping, yard cleanup)</label><br>
+
+            <p>
+                <!-- Dropdown menu for friendliness rating -->
+                <label for="friendliness">Friendliness rating:</label><br>
+                <select id="friendliness" name="friendliness" required>
+                    <option value="">Select a rating</option>
+                    <option value="1">1 - Not friendly at all, very rude</option>
+                    <option value="2">2 - Not friendly, very little or no communication</option>
+                    <option value="3">3 - Not friendly or rude (neutral), communicated when necessary</option>
+                    <option value="4">4 - Friendly - Polite, communicated respectfully</option>
+                    <option value="5">5 - Very friendly - polite, respectful, communicated with warmth and care</option>
+                </select>
+            </p>
+                    <p>
+                    <!-- textarea for additional comments -->
+                    <label for="comments">Additional comments:</label><br>
+                        <textarea 
+                            id="comments" 
+                            name="comments"
+                            maxlength="500" 
+                            rows="6" 
+                            cols="40"></textarea>
+                    </p>
+
+                    <p>
+                            <input 
+                                type="submit" 
+                                value="Submit Feedback">
+
+                    </p>
+            </form>
+
+
+    </div>
+</body>
+</html>
+
+<!--
+References
+
+GeeksforGeeks. (n.d.). JSP – Form Processing. 
+https://www.geeksforgeeks.org/advance-java/jsp-form-processing/
+
+W3 Schools. (n.d.). HTML Input Types. 
+https://www.w3schools.com/html/html_form_input_types.asp
+
+
+
+
+
+-->

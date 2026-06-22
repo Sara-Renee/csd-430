@@ -1,0 +1,52 @@
+/* Sara White - CSD-430 - Assignment 3.2 CSS*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.survey-card, .results {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+/* 
+References
+
+GeeksforGeeks. (n.d.). JSP – Form Processing. 
+https://www.geeksforgeeks.org/advance-java/jsp-form-processing/
+
+W3 Schools. (n.d.). HTML Input Types. 
+https://www.w3schools.com/html/html_form_input_types.asp
+
+
+*/
+
+
