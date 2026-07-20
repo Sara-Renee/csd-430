@@ -1,0 +1,68 @@
+/* Sara White - CSD-430 - Assignment 5.3/6.3 */
+
+body {
+  margin: 18px;
+  font-family: "Roboto", system-ui, sans-serif;
+  background: #5b4f54;
+  color: rgb(209, 209, 209);
+}
+
+table {
+    margin: 25px auto;
+    border-collapse: collapse;
+}
+
+table th, 
+table td {
+  border-collapse: collapse;
+  border-style: inset;
+  border-width: 6px;
+  border-color: rgb(64, 63, 63);
+  font-size: 20px;
+}
+
+th, td {
+  padding: 10px;
+}
+
+form {
+    margin: 20px auto;
+    padding: 15px;
+    width: fit-content;
+    background-color: #7b6a71;
+    border: 2px solid #2f2529;
+    border-radius: 12px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2f2529;
+}
+
+select {
+    padding: 8px 12px;
+    border: 1px solid #7b5368;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+button,
+input[type="submit"] {
+    padding: 9px 16px;
+    margin-left: 10px;
+    background-color: #7b5368;
+    color: white;
+    border: 2px solid #2f2529;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .2s ease, transform .1s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #5f3f50;
+    transform: translateY(-1px);
+}
