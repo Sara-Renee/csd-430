@@ -1,0 +1,215 @@
+/* Sara White - CSD-430 - CSS for Assignments 7, 8 and 9*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: "Roboto", system-ui, sans-serif;
+    background: #5b4f54;
+    color: rgb(238, 238, 238);
+}
+
+main {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.page-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.page-nav a,
+.button-link {
+    display: inline-block;
+    padding: 9px 14px;
+    color: white;
+    background-color: #7b5368;
+    border: 2px solid #2f2529;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.page-nav a:hover,
+.button-link:hover {
+    background-color: #5f3f50;
+    transform: translateY(-1px);
+}
+
+.page-nav a[aria-current="page"] {
+    background-color: #4b3c43;
+}
+
+.button-link.secondary {
+    background-color: #6a5b61;
+}
+
+header,
+.form-section,
+.records-section {
+    margin-bottom: 24px;
+    padding: 22px;
+    background-color: #6a5b61;
+    border: 2px solid #2f2529;
+    border-radius: 14px;
+}
+
+.compact-section {
+    max-width: 760px;
+}
+
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+form {
+    margin-top: 18px;
+    padding: 20px;
+    background-color: #7b6a71;
+    border: 2px solid #2f2529;
+    border-radius: 12px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: minmax(150px, 220px) minmax(240px, 1fr);
+    gap: 12px 18px;
+    align-items: center;
+}
+
+label,
+.field-label {
+    font-weight: bold;
+    color: #241b1f;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 9px 12px;
+    border: 2px solid #5f3f50;
+    border-radius: 8px;
+    background-color: white;
+    color: #241b1f;
+    font: inherit;
+}
+
+select {
+    cursor: pointer;
+}
+
+.readonly-value {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 12px;
+    color: #241b1f;
+    background-color: #d9cbd1;
+    border: 2px solid #5f3f50;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.readonly-value small {
+    font-weight: normal;
+}
+
+input[type="submit"] {
+    margin-top: 18px;
+    padding: 10px 18px;
+    background-color: #7b5368;
+    color: white;
+    border: 2px solid #2f2529;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #5f3f50;
+    transform: translateY(-1px);
+}
+
+.message {
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #d9ead3;
+    color: #264d21;
+}
+
+.error {
+    background-color: #f4cccc;
+    color: #6b1f1f;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 18px;
+    border-collapse: collapse;
+    background-color: #817178;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 3px inset rgb(64, 63, 63);
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #4b3c43;
+    color: white;
+}
+
+th small {
+    font-weight: normal;
+    color: #eadde3;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #75656c;
+}
+
+.action-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 12px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    label:not(:first-child),
+    .field-label:not(:first-child) {
+        margin-top: 8px;
+    }
+}
